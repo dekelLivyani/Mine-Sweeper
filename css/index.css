@@ -1,13 +1,147 @@
+body {
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 0 3px gray, 0 0 10px blue;
+}
+
+.status {
+    font-size: 25px;
+}
+
+.status .box-status {
+    background-color: rgb(112, 119, 121);
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    border: 5px rgb(49, 37, 37) solid;
+    color: rgb(63, 39, 39);
+    padding: 5px;
+    font-family: fantasy;
+}
+
+.status .restart {
+    margin-left: 90px;
+    background-color: rgb(180, 190, 192);
+    padding: 1px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.status .restart:hover {
+    background-color: gray;
+}
+
+.status .restart span {
+    font-size: 20px;
+}
+
+.status .score {
+    display: inline-block;
+}
+
+.status .time {
+    margin-left: 90px;
+    display: inline-block;
+}
+
+.choice {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.level {
+    font-size: 20px;
+    color: rgb(57, 89, 177);
+    font-weight: bold;
+}
+
+.panel {
+    font-size: 25px;
+    background-color: rgb(112, 119, 121);
+    color: rgb(63, 39, 39);
+    border-radius: 5px;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 3px;
+    left: 7%;
+    top: 30%;
+    width: 250px;
+    height: 200px;
+    font-family: fantasy;
+    border: 5px rgb(49, 37, 37) solid;
+    text-align: left;
+}
+
+.hints {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.lives {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 table {
     text-align: center;
     margin: auto;
+    margin-top: 15px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
 }
 
 td {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+    cursor: pointer;
+    color: rgb(187, 187, 168);
+    box-shadow: 0px 2px rgb(57, 89, 177);
+}
+
+td:hover {
+    background-color: rgb(119, 109, 109);
 }
 
 .shown {
+    background-color: rgb(83, 78, 78);
+    cursor: auto;
+}
+
+.shown:hover {
+    background-color: rgb(83, 78, 78);
+}
+
+.hint-cell {
+    background-color: rgb(47, 82, 94);
+}
+
+.bomb {
     background-color: red;
+    cursor: auto;
+}
+
+.bomb:hover {
+    background-color: red;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(114, 109, 109);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    margin-top: 240px;
 }

@@ -9,16 +9,33 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body onload="init()">
+<body onload="init()"=>
+    <h1>Mine Sweeper</h1>
+    <div class="status">
+        <div class="box-status score">
+            Score: <span>00</span>
+        </div>
+        <button class="restart" onclick="restart()"><span></span></button>
+        <div class="box-status time">Time:
+            <span>00</span></div>
+    </div>
+    <input type="radio" class="choice" id="esay" name="dif" value="4" checked> <span class="level">Esay</span>
+    <input type="radio" class="choice" id="medium" name="dif" value="8"> <span class="level"> Medium</span>
+    <input type="radio" class="choice" id="hard" name="dif" value="12"> <span class="level"> Hard</span>
     <div class="board-game">
-        <div class="table-game">
+        <div class="panel">
+            Lives:
+            <div class="lives"><span></span></div>
+            <br> Hints:
+            <div class="hints"> </div>
 
         </div>
-
+        <div class="table-game"></div>
     </div>
 
     <script src="js/util.js"></script>
     <script src="js/index.js"></script>
 </body>
+<footer>By Dekel Livyani</footer>
 
 </html>
