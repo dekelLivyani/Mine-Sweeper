@@ -1,0 +1,13 @@
+table {
+    text-align: center;
+    margin: auto;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}
+
+.shown {
+    background-color: red;
+}
