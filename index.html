@@ -19,19 +19,23 @@
         <div class="box-status time">Time:
             <span>00</span></div>
     </div>
-    <input type="radio" class="choice" id="esay" name="dif" value="4" checked> <span class="level">Esay</span>
-    <input type="radio" class="choice" id="medium" name="dif" value="8"> <span class="level"> Medium</span>
-    <input type="radio" class="choice" id="hard" name="dif" value="12"> <span class="level"> Hard</span>
+    <input type="radio" class="choice" id="easy" name="dif" value="4" onclick="restart()" checked> <span class="level">Easy</span>
+    <input type="radio" class="choice" id="medium" name="dif" value="8" onclick="restart()"><span class="level"> Medium</span>
+    <input type="radio" class="choice" id="hard" name="dif" value="12" onclick="restart()"><span class="level"> Hard</span>
     <div class="board-game">
         <div class="panel">
             Lives:
             <div class="lives"><span></span></div>
-            <br> Hints:
-            <div class="hints"> </div>
-
+            <br>
+            <div> Hints:
+                <span class="hints"> </span> </div>
+            <div class="best-time"> Best Time (<span class="level"> </span>) : <span class="time"></span> </div>
+            <button class="button save-click" onclick="saveClick()">Save Click (<span></span>)</button>
+            <button class="button undo" onclick="undoClick()">Undo</button>
         </div>
         <div class="table-game"></div>
     </div>
+
 
     <script src="js/util.js"></script>
     <script src="js/index.js"></script>

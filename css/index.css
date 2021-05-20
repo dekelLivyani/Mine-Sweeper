@@ -1,11 +1,11 @@
 body {
-    background-color: black;
-    color: gray;
+    background-color: rgb(83, 53, 139);
+    color: rgb(175, 159, 159);
     text-align: center;
 }
 
 h1 {
-    text-shadow: 0 0 3px gray, 0 0 10px blue;
+    text-shadow: 0 0 3px black, 0 0 15px red;
 }
 
 .status {
@@ -55,7 +55,7 @@ h1 {
 
 .level {
     font-size: 20px;
-    color: rgb(57, 89, 177);
+    color: rgb(160, 134, 133);
     font-weight: bold;
 }
 
@@ -65,12 +65,12 @@ h1 {
     color: rgb(63, 39, 39);
     border-radius: 5px;
     position: absolute;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 3px;
     left: 7%;
-    top: 30%;
-    width: 250px;
-    height: 200px;
+    top: 28%;
+    width: 260px;
+    height: 300px;
     font-family: fantasy;
     border: 5px rgb(49, 37, 37) solid;
     text-align: left;
@@ -87,6 +87,37 @@ h1 {
     display: inline-block;
     margin-top: 20px;
     font-size: 30px;
+}
+
+.heart {
+    height: 40px;
+    width: auto
+}
+
+.best-time {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.best-time .level {
+    color: rgb(63, 39, 39);
+}
+
+.button {
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 120px;
+    height: 60px;
+    font-size: 18px;
+    color: rgb(68, 65, 65);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(119, 146, 156);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(85, 141, 165);
 }
 
 table {
@@ -124,6 +155,10 @@ td:hover {
 
 .hint-cell {
     background-color: rgb(47, 82, 94);
+}
+
+.save-cell {
+    background-color: slateblue;
 }
 
 .bomb {
