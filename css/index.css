@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(83, 53, 139);
-    color: rgb(175, 159, 159);
+    color: rgb(184, 172, 172);
     text-align: center;
+    background: linear-gradient(to bottom, rgb(81, 78, 212), rgb(149, 138, 172), rgb(46, 46, 48));
 }
 
 h1 {
-    text-shadow: 0 0 3px black, 0 0 15px red;
+    text-shadow: 0 0 3px black, 0 0 15px rgb(255, 0, 21);
 }
 
 .status {
@@ -55,7 +55,7 @@ h1 {
 
 .level {
     font-size: 20px;
-    color: rgb(160, 134, 133);
+    color: rgb(36, 28, 73);
     font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ h1 {
     left: 7%;
     top: 28%;
     width: 260px;
-    height: 300px;
+    height: 350px;
     font-family: fantasy;
     border: 5px rgb(49, 37, 37) solid;
     text-align: left;
@@ -81,6 +81,17 @@ h1 {
     font-size: 30px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.hints span {
+    padding-top: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.hints span:hover {
+    border-radius: 10px;
+    border: 2px orange dotted;
 }
 
 .lives {
@@ -110,14 +121,41 @@ h1 {
     width: 120px;
     height: 60px;
     font-size: 18px;
-    color: rgb(68, 65, 65);
+    background-color: rgb(59, 59, 65);
+    color: rgb(150, 146, 141);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(119, 146, 156);
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: rgb(85, 141, 165);
+    border: 3px rgb(173, 158, 158) solid;
+}
+
+.create-mine {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 7px;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    background-color: rgb(59, 59, 65);
+    color: rgb(150, 146, 141);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+.create-mine:hover {
+    border: 3px rgb(173, 158, 158) solid;
+}
+
+.is-create {
+    background-color: rgb(19, 19, 20);
+    color: rgb(150, 146, 141)
+}
+
+.is-create:hover {
+    background-color: rgb(19, 19, 20);
+    color: rgb(150, 146, 141)
 }
 
 table {
@@ -138,6 +176,7 @@ td {
     cursor: pointer;
     color: rgb(187, 187, 168);
     box-shadow: 0px 2px rgb(57, 89, 177);
+    transition: 0.2s;
 }
 
 td:hover {
@@ -154,29 +193,32 @@ td:hover {
 }
 
 .hint-cell {
-    background-color: rgb(47, 82, 94);
+    background-color: rgb(67, 133, 155);
+}
+
+.hint-cell:hover {
+    background-color: rgb(67, 133, 155);
 }
 
 .save-cell {
-    background-color: slateblue;
+    background-color: rgb(110, 100, 177);
 }
 
-.bomb {
+.explode {
     background-color: red;
     cursor: auto;
 }
 
-.bomb:hover {
+.explode:hover {
     background-color: red;
 }
 
 footer {
     height: 30px;
     width: 100%;
-    background-color: rgb(114, 109, 109);
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: rgb(170, 159, 159);
     font-style: italic;
     margin-top: 240px;
 }

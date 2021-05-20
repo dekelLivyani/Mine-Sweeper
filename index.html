@@ -10,7 +10,7 @@
 </head>
 
 <body onload="init()"=>
-    <h1>Mine Sweeper</h1>
+    <h1>Mine Sweeper Game</h1>
     <div class="status">
         <div class="box-status score">
             Score: <span>00</span>
@@ -32,6 +32,7 @@
             <div class="best-time"> Best Time (<span class="level"> </span>) : <span class="time"></span> </div>
             <button class="button save-click" onclick="saveClick()">Save Click (<span></span>)</button>
             <button class="button undo" onclick="undoClick()">Undo</button>
+            <button class="create-mine" onclick="createMineClick()">Set Your Mine</button>
         </div>
         <div class="table-game"></div>
     </div>
@@ -40,6 +41,6 @@
     <script src="js/util.js"></script>
     <script src="js/index.js"></script>
 </body>
-<footer>By Dekel Livyani</footer>
+<footer>By Dekel Livyani ©</footer>
 
 </html>
