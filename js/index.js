@@ -194,6 +194,7 @@ function cellClicked(elCell) {
             elCell.classList.toggle('explode');
         }, 200);
         setTimeout(function() {
+            if (!elCell.classList.contains('explode')) elCell.classList.add('explode');
             clearInterval(intervalBurn);
         }, 1000);
 
@@ -435,12 +436,17 @@ function gameOver() {
 function setHighTimeInElement() {
     var currLevel = getLevel().levelName;
     var elTime = document.querySelector('.best-time .time');
-    elTime.innerText = localStorage[currLevel];
+    if (+localStorage[currLevel] === 0 || !localStorage[currLevel]) {
+        localStorage[currLevel] = 0;
+        elTime.innerText = 'Not exist';
+    } else {
+        elTime.innerText = localStorage[currLevel];
+    }
 }
 
 function updateBestTime() {
     var currLevel = getLevel().levelName;
-    if (+localStorage[currLevel] > +gTime && +gTime) {
+    if (+localStorage[currLevel] > +gTime && +gTime || +localStorage[currLevel] === 0) {
         localStorage[currLevel] = gTime;
     }
 }
